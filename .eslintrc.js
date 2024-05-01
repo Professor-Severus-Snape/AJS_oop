@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: 'airbnb-base', // Airbnb JavaScript Style Guide
   rules: {
-    'no-console': 'off', // временное отключение правила
+    // 'no-console': 'off', // временное отключение правила
+    'no-unused-vars': 'off', // временное отключение правила
   },
 };
