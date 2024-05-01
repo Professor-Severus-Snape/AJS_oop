@@ -19,3 +19,34 @@ test('testing of character creation with invalid name parameter (length > 10)', 
 test('testing of character creation with invalid type parameter', () => {
   expect(() => { const character = new Character('не лучник', 'Not a Bowman'); }).toThrowError('Ошибка в параметре type');
 });
+
+test('testing levelUp method (health > 0)', () => {
+  const character = new Character('лучник', 'Bowman');
+  character.health = 25;
+  character.levelUp();
+  expect(character).toEqual({
+    name: 'лучник', type: 'Bowman', health: 100, level: 2, attack: 12, defence: 12,
+  });
+});
+
+test('testing levelUp method (health = 0)', () => {
+  const character = new Character('лучник', 'Bowman');
+  character.health = 0;
+  expect(() => character.levelUp()).toThrow('Нельзя воскресить мёртвеца');
+});
+
+test('testing damage method (final health > 0)', () => {
+  const character = new Character('лучник', 'Bowman');
+  character.damage(33);
+  expect(character).toEqual({
+    name: 'лучник', type: 'Bowman', health: 70, level: 1, attack: 10, defence: 10,
+  });
+});
+
+test('testing damage method (final health < 0)', () => {
+  const character = new Character('лучник', 'Bowman');
+  character.damage(133);
+  expect(character).toEqual({
+    name: 'лучник', type: 'Bowman', health: 0, level: 1, attack: 10, defence: 10,
+  });
+});
