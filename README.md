@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Классы, наследование»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/k8q79agsmwct12t4?svg=true)](https://ci.appveyor.com/project/Professor-Severus-Snape/ajs-oop)
+
 ## Важно:
 1. Код должен проходить ESLint без ошибок.
 2. Unit-тесты должны обеспечивать 100% покрытие тестируемых функций и классов по строкам.
