@@ -33,14 +33,16 @@ test('testing of character creation with invalid type parameter', () => {
 test('testing levelUp method (health > 0)', () => {
   const character = new Character('лучник', 'Bowman');
   character.health = 25;
+  character.attack = 25;
+  character.defence = 25;
   character.levelUp();
   expect(character).toEqual({
     name: 'лучник',
     type: 'Bowman',
     health: 100,
     level: 2,
-    attack: 12,
-    defence: 12,
+    attack: 30,
+    defence: 30,
   });
 });
 
@@ -52,26 +54,30 @@ test('testing levelUp method (health = 0)', () => {
 
 test('testing damage method (final health > 0)', () => {
   const character = new Character('лучник', 'Bowman');
+  character.attack = 25;
+  character.defence = 25;
   character.damage(33);
   expect(character).toEqual({
     name: 'лучник',
     type: 'Bowman',
-    health: 70,
+    health: 75,
     level: 1,
-    attack: 10,
-    defence: 10,
+    attack: 25,
+    defence: 25,
   });
 });
 
 test('testing damage method (final health < 0)', () => {
   const character = new Character('лучник', 'Bowman');
-  character.damage(133);
+  character.attack = 25;
+  character.defence = 25;
+  character.damage(1000);
   expect(character).toEqual({
     name: 'лучник',
     type: 'Bowman',
     health: 0,
     level: 1,
-    attack: 10,
-    defence: 10,
+    attack: 25,
+    defence: 25,
   });
 });

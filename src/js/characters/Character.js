@@ -21,8 +21,8 @@ export default class Character {
     this.type = type;
     this.health = 100;
     this.level = 1;
-    this.attack = 10; // нужно ли ???
-    this.defence = 10; // нужно ли ???
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   levelUp() {
@@ -37,6 +37,6 @@ export default class Character {
 
   damage(points) {
     this.health -= points * (1 - this.defence / 100);
-    this.health = this.health < 0 ? 0 : Math.floor(this.health);
+    this.health = this.health < 0 ? 0 : Math.round(this.health);
   }
 }
