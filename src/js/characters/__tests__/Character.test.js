@@ -49,7 +49,7 @@ test('testing levelUp method (health > 0)', () => {
 test('testing levelUp method (health = 0)', () => {
   const character = new Character('лучник', 'Bowman');
   character.health = 0;
-  expect(() => character.levelUp()).toThrow('Нельзя воскресить мёртвеца');
+  expect(() => character.levelUp()).toThrow('Нельзя воскресить мертвеца');
 });
 
 test('testing damage method (final health > 0)', () => {

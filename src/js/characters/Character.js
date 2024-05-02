@@ -27,7 +27,7 @@ export default class Character {
 
   levelUp() {
     if (!this.health) {
-      throw new Error('Нельзя воскресить мёртвеца');
+      throw new Error('Нельзя воскресить мертвеца');
     }
     this.level += 1;
     this.attack += this.attack * 0.2;
