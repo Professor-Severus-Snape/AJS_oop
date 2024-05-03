@@ -6,8 +6,5 @@ module.exports = {
     jest: true, // для корректной работы ESLint с Jest
   },
   extends: 'airbnb-base', // Airbnb JavaScript Style Guide
-  rules: {
-    // 'no-console': 'off', // временное отключение правила
-    'no-unused-vars': 'off', // временное отключение правила
-  },
+  rules: {}, // заготовка для собственных правил
 };
