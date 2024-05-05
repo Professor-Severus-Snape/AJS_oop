@@ -1,4 +1,4 @@
-import Magician from '../Magician';
+import Magician from '../js/characters/characterHeirs/Magician';
 
 test('testing of magician creation without type parameter', () => {
   const result = new Magician('маг1');

@@ -1,4 +1,4 @@
-import Swordsman from '../Swordsman';
+import Swordsman from '../js/characters/characterHeirs/Swordsman';
 
 test('testing of swordsman creation without type parameter', () => {
   const result = new Swordsman('мечник1');

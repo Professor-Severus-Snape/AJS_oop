@@ -1,4 +1,4 @@
-import Daemon from '../Daemon';
+import Daemon from '../js/characters/characterHeirs/Daemon';
 
 test('testing of daemon creation without type parameter', () => {
   const result = new Daemon('демон1');

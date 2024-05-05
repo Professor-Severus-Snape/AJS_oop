@@ -1,4 +1,4 @@
-import Undead from '../Undead';
+import Undead from '../js/characters/characterHeirs/Undead';
 
 test('testing of undead creation without type parameter', () => {
   const result = new Undead('нежить1');

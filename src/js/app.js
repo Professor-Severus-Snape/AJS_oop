@@ -1,6 +1,6 @@
 import './characters/Character';
-import './characters/Daemon';
-import './characters/Magician';
-import './characters/Swordsman';
-import './characters/Undead';
-import './characters/Zombie';
+import './characters/characterHeirs/Daemon';
+import './characters/characterHeirs/Magician';
+import './characters/characterHeirs/Swordsman';
+import './characters/characterHeirs/Undead';
+import './characters/characterHeirs/Zombie';

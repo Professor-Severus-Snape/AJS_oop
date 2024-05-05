@@ -1,4 +1,4 @@
-import Character from '../Character';
+import Character from '../js/characters/Character';
 
 test('testing of character creation without parameters', () => {
   expect(() => new Character()).toThrowError();

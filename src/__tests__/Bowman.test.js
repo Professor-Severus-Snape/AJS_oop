@@ -1,4 +1,4 @@
-import Bowman from '../Bowman';
+import Bowman from '../js/characters/characterHeirs/Bowman';
 
 test('testing of bowman creation without type parameter', () => {
   const result = new Bowman('лучник1');

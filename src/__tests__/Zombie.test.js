@@ -1,4 +1,4 @@
-import Zombie from '../Zombie';
+import Zombie from '../js/characters/characterHeirs/Zombie';
 
 test('testing of zombie creation without type parameter', () => {
   const result = new Zombie('зомби1');
